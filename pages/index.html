@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="/css/styles.css" as="style">
+    <link rel="stylesheet" href="/css/styles.css">
+    <script defer src="/js/script.js"></script>
+    <title>LostArchives</title>
+</head>
+<body>
+    <div class="login-container">     
+        <img src="/images/icons/person.svg" alt="person" class="person-icon">
+        <div class="cta">
+
+            <span><a href="#">Sign in</a></span>
+        </div>
+    </div>
+
+    <div class="caption">
+        <h1>Lost<span class="highlight">Archives</span></h1>
+    </div>
+
+    <nav class="nav-container">
+        <ul class="nav-ul">
+            <li class="nav-link"><a href="home.html">Home</a></li>
+            <li class="nav-link"><a href="#">Shop</a></li>
+            <li class="nav-link"><a href="#">About</a></li>
+            <li class="nav-link"><a href="#">Library</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- <style>
+        .js-loading {
+            opacity: 0;
+        }
+        .js-loading-complete {
+            opacity: 1;
+            transition: opacity .25s;
+        }
+    </style> -->
+</body>
+    <script>
+        document.body.classList.add('js-loading');
+        window.addEventListener('load', () => {
+            document.body.classList.remove('js-loading');
+            document.body.classList.add('js-loading-complete');
+        });
+    </script>
+</html>
